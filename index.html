@@ -1,0 +1,280 @@
+<html><head><base href="https://websim.ai/massage"><title>SH Massage - Massage Therapy Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Lora:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5e6;
+    color: #4a3827;
+    line-height: 1.5;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  header {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+    padding: 15px 0;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-image {
+    width: 140px;
+    height: 140px;
+  }
+  .logo-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+  .contact-info {
+    font-size: 15px;
+    text-align: left;
+  }
+  .header-image-container {
+    background-color: #fff5e6;
+    padding: 20px 0;
+    overflow: hidden;
+  }
+  .header-image-slider {
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  .header-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  .header-image.active {
+    opacity: 1;
+  }
+  main {
+    margin: 20px auto;
+  }
+  h1 {
+    font-family: 'Lora', serif;
+    color: #ff5e62;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .advertising-text {
+    font-family: 'Lora', serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    color: #4a3827;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+  .massage-type {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  .massage-type-content {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .massage-type h2 {
+    font-family: 'Lora', serif;
+    color: #ff9966;
+    margin-top: 0;
+    font-size: 1.3em;
+  }
+  .massage-type p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+  }
+  .massage-type img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .cta-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .cta {
+    background-color: #ff5e62;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+  }
+  .cta:hover, .cta:focus {
+    background-color: #ff7f50;
+  }
+  footer {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.8em;
+  }
+
+  @media (min-width: 768px) {
+    .contact-info {
+      font-size: 1em;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+    .advertising-text {
+      font-size: 1.2em;
+    }
+    .massage-type {
+      flex-direction: row;
+      align-items: stretch;
+    }
+    .massage-type:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .massage-type-content {
+      padding: 20px;
+      width: calc(100% - 500px);
+    }
+    .massage-type h2 {
+      font-size: 1.5em;
+    }
+    .massage-type p {
+      font-size: 1em;
+    }
+    .massage-type img {
+      width: 500px;
+      height: 400px;
+    }
+    .cta {
+      font-size: 1em;
+    }
+    footer {
+      font-size: 1em;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-container">
+          <img src="http://1.116.139.202/images/logo.png" alt="SH Massage Logo" class="logo-image">
+          <!--<div class="logo-text">SH Massage</div>-->
+        </div>
+        <div class="contact-info">
+          <p>Phone: 236-638-9259</p>
+		  <p>Open: 09 am - 21:00 pm</p>
+		  <p>Address: 5833 York RD Duncan BC</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="header-image-container">
+    <div class="container">
+      <div class="header-image-slider">
+        <img src="http://1.116.139.202/images/11.jpg" alt="Full body back massage in a spa setting" class="header-image active" width="1200" height="400">
+        <img src="http://1.116.139.202/images/14.jpg" alt="Massage oils and flowers in a spa setting" class="header-image" width="1200" height="400">
+        <img src="http://1.116.139.202/images/12.jpg" alt="Hands performing a relaxing massage" class="header-image" width="1200" height="400">
+      </div>
+    </div>
+  </div>
+  <main class="container">
+    <h1>Welcome to SH Massage</h1>
+    <div class="advertising-text">
+       Feeling stressed? Tired? In need of some serious relaxation?
+
+        our professional massage therapists are here to help you unwind, rejuvenate, and feel your best. Massage therapy offers a multitude of benefits for your body and mind, including,Stress Relief,Pain Management,Improved Circulation,Muscle Relaxation
+
+        Whether you need a quick escape from your busy day or a comprehensive treatment plan, we have a variety of massages to suit your needs.
+
+        Do not wait to experience the incredible benefits of massage therapy. Schedule your appointment today and start your journey to relaxation and well-being.
+    </div>
+    
+    <div class="massage-types">
+      <div class="massage-type">
+        <div class="massage-type-content">
+          <h2>Stress and anxiety relief</h2>
+          <p>Massage is effective in relieving stress and anxiety by promoting relaxation and releasing tension in the body. During a massage, the body releases endorphins, a natural "happy hormone" that can significantly elevate mood and reduce anxiety.
+                    By boosting parasympathetic activity, massage promotes deep relaxation and reduces feelings of tension and anxiety.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1" alt="Relaxing Swedish massage session" width="500" height="400">
+      </div>
+      <div class="massage-type">
+        <div class="massage-type-content">
+          <h2>Improvement of sleep quality</h2>
+          <p>Regular massage helps regulate sleep patterns and helps fall asleep faster and deeper. By lowering stress hormone levels and relaxing muscles, massage can significantly improve the quality of your sleep, allowing you to enjoy a deeper rest each night.
+                    Massage may help boost levels of melatonin, a hormone that regulates sleep. Melatonin plays a key role in regulating the sleep-wake cycle, and proper levels can help you fall asleep more easily.</p>
+        </div>
+        <img src="http://1.116.139.202/images/22.jpeg" alt="Deep Tissue Massage" width="500" height="400">
+      </div>
+      <div class="massage-type">
+        <div class="massage-type-content">
+          <h2>Relieves pain and muscle tension</h2>
+          <p>Massage is effective in relieving pain caused by muscle tension and stress. Whether you are suffering from neck, shoulder or back pain, massage can alleviate these discomforts by relaxing the muscles and improving circulation, while promoting the body's self-healing process.
+                    These benefits make massage a very effective form of relaxation and self-care, helping you find a slice of peace and comfort in your busy life.</p>
+        </div>
+        <img src="http://1.116.139.202/images/23.jpg" alt="Hot Stone Massage" width="500" height="400">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 SH Massage. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const images = document.querySelectorAll('.header-image');
+    let currentImage = 0;
+
+    function rotateImages() {
+      images[currentImage].classList.remove('active');
+      currentImage = (currentImage + 1) % images.length;
+      images[currentImage].classList.add('active');
+    }
+
+    setInterval(rotateImages, 5000); // Change image every 5 seconds
+  </script>
+</body>
+</html>
